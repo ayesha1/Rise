@@ -10,20 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rise" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
         <!--Resources-->
         <scene sceneID="mJO-T3-B5q">
             <objects>
@@ -34,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Fcx-eo-QtC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Resources" id="y1C-Lj-3GK"/>
+                    <tabBarItem key="tabBarItem" title="Resources" image="lightbulb" selectedImage="lightbulb" id="y1C-Lj-3GK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tgi-Q8-Ktq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,7 +36,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XR3-pt-1bQ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="yEy-r6-tGw"/>
+                    <tabBarItem key="tabBarItem" title="" image="Plus" landscapeImage="Plus" selectedImage="plusplus" id="yEy-r6-tGw">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.97647058819999999" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCX-f7-iXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -64,14 +59,50 @@
                     <view key="view" contentMode="scaleToFill" id="pII-ap-02b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="djG-94-jIv">
+                                <rect key="frame" x="20" y="34" width="68" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RiseLogo" translatesAutoresizingMaskIntoConstraints="NO" id="I1w-Fn-C85">
+                                <rect key="frame" x="137" y="55" width="82" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Community Wall (1)" translatesAutoresizingMaskIntoConstraints="NO" id="bSc-H9-R11">
+                                <rect key="frame" x="20" y="110" width="186" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo Small" translatesAutoresizingMaskIntoConstraints="NO" id="h6V-jO-icn">
+                                <rect key="frame" x="227" y="55" width="45" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yKC-cR-VOu"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Community" id="7Bt-C4-Lmj"/>
+                    <tabBarItem key="tabBarItem" title="Community" image="CommunityL" selectedImage="comm" id="7Bt-C4-Lmj">
+                        <color key="badgeColor" red="0.97647058823529409" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.97647058819999999" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4pd-YN-X4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="735"/>
+            <point key="canvasLocation" x="457.97101449275368" y="734.51086956521749"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="V2L-LL-VJb">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="rXU-NG-ckT" customClass="ChatViewController" customModule="Rise" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chat" image="Chat" selectedImage="Chat Selected" id="Dcm-Ij-3hT"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XoK-Vr-6um" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1648" y="1694"/>
         </scene>
         <!--Career-->
         <scene sceneID="I97-wJ-Hsy">
@@ -83,45 +114,36 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dyB-Ye-FIs"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Career" id="eNe-fa-QgR"/>
+                    <tabBarItem key="tabBarItem" title="Career" image="Career" selectedImage="careerSelected" id="eNe-fa-QgR"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6g8-F3-OI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-425" y="2070"/>
         </scene>
-        <!--Chat-->
-        <scene sceneID="gkx-Iu-63B">
-            <objects>
-                <viewController id="U8y-rQ-wPp" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="agu-IK-7vq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Ocq-IB-mqx"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Chat" id="YSt-GS-sTO"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdr-c6-ouI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1251" y="2070"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="n7Y-Cw-SjH">
             <objects>
                 <tabBarController id="Rmr-X8-Xg2" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l0Y-iG-ioK">
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="l0Y-iG-ioK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.97647058819999999" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="dAi-oZ-Gtq" kind="relationship" relationship="viewControllers" id="1dq-2X-cTW"/>
                         <segue destination="z7w-54-dQL" kind="relationship" relationship="viewControllers" id="2x8-N1-EM3"/>
                         <segue destination="UUe-HZ-jIg" kind="relationship" relationship="viewControllers" id="DFF-dl-Iif"/>
                         <segue destination="RzA-Kk-PC1" kind="relationship" relationship="viewControllers" id="FNM-qm-sXw"/>
-                        <segue destination="U8y-rQ-wPp" kind="relationship" relationship="viewControllers" id="2LA-Qb-NWc"/>
+                        <segue destination="rXU-NG-ckT" kind="relationship" relationship="viewControllers" id="yZH-sn-PAf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hf-cr-z4O" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -129,4 +151,20 @@
             <point key="canvasLocation" x="-461" y="1065"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Career" width="20" height="20"/>
+        <image name="Chat" width="20" height="18"/>
+        <image name="Chat Selected" width="20" height="18"/>
+        <image name="Community Wall (1)" width="367" height="47"/>
+        <image name="CommunityL" width="26" height="15"/>
+        <image name="Logo Small" width="73" height="50"/>
+        <image name="Plus" width="32" height="32"/>
+        <image name="RiseLogo" width="158" height="80"/>
+        <image name="careerSelected" width="20" height="20"/>
+        <image name="comm" width="26" height="15"/>
+        <image name="lightbulb" width="23" height="18"/>
+        <image name="plusplus" width="32" height="32"/>
+        <image name="profile" width="100" height="100"/>
+    </resources>
+    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

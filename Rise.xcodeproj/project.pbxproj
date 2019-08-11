@@ -10,8 +10,10 @@
 		6A57B1BD22FF964800A87AFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A57B1BC22FF964800A87AFC /* AppDelegate.swift */; };
 		6A57B1BF22FF964800A87AFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A57B1BE22FF964800A87AFC /* ViewController.swift */; };
 		6A57B1C222FF964800A87AFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A57B1C022FF964800A87AFC /* Main.storyboard */; };
-		6A57B1C422FF964900A87AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A57B1C322FF964900A87AFC /* Assets.xcassets */; };
 		6A57B1C722FF964900A87AFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A57B1C522FF964900A87AFC /* LaunchScreen.storyboard */; };
+		6A57B1CF22FFAD8B00A87AFC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A57B1CE22FFAD8B00A87AFC /* ChatViewController.swift */; };
+		6A57B1D122FFB5E700A87AFC /* movie.mov in Resources */ = {isa = PBXBuildFile; fileRef = 6A57B1D022FFB5E700A87AFC /* movie.mov */; };
+		6A57B1D322FFBA1500A87AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A57B1D222FFBA1500A87AFC /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +21,11 @@
 		6A57B1BC22FF964800A87AFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A57B1BE22FF964800A87AFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6A57B1C122FF964800A87AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6A57B1C322FF964900A87AFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A57B1C622FF964900A87AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A57B1C822FF964900A87AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A57B1CE22FFAD8B00A87AFC /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		6A57B1D022FFB5E700A87AFC /* movie.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = movie.mov; path = ../../../Downloads/movie.mov; sourceTree = "<group>"; };
+		6A57B1D222FFBA1500A87AFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		6A57B1B022FF964800A87AFC = {
 			isa = PBXGroup;
 			children = (
+				6A57B1D022FFB5E700A87AFC /* movie.mov */,
 				6A57B1BB22FF964800A87AFC /* Rise */,
 				6A57B1BA22FF964800A87AFC /* Products */,
 			);
@@ -57,9 +62,10 @@
 				6A57B1BC22FF964800A87AFC /* AppDelegate.swift */,
 				6A57B1BE22FF964800A87AFC /* ViewController.swift */,
 				6A57B1C022FF964800A87AFC /* Main.storyboard */,
-				6A57B1C322FF964900A87AFC /* Assets.xcassets */,
+				6A57B1D222FFBA1500A87AFC /* Assets.xcassets */,
 				6A57B1C522FF964900A87AFC /* LaunchScreen.storyboard */,
 				6A57B1C822FF964900A87AFC /* Info.plist */,
+				6A57B1CE22FFAD8B00A87AFC /* ChatViewController.swift */,
 			);
 			path = Rise;
 			sourceTree = "<group>";
@@ -122,8 +128,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A57B1D122FFB5E700A87AFC /* movie.mov in Resources */,
 				6A57B1C722FF964900A87AFC /* LaunchScreen.storyboard in Resources */,
-				6A57B1C422FF964900A87AFC /* Assets.xcassets in Resources */,
+				6A57B1D322FFBA1500A87AFC /* Assets.xcassets in Resources */,
 				6A57B1C222FF964800A87AFC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A57B1BF22FF964800A87AFC /* ViewController.swift in Sources */,
+				6A57B1CF22FFAD8B00A87AFC /* ChatViewController.swift in Sources */,
 				6A57B1BD22FF964800A87AFC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
