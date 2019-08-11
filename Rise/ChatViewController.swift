@@ -10,7 +10,5 @@ import Foundation
 import AVKit
 
 class ChatViewController: AVPlayerViewController {
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
+  
 }
